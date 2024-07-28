@@ -1,9 +1,10 @@
-export default function Product() {
+export default function Product({ title, description, image }) {
     return (
-        <div className="w-auto max-w-sm border-solid border-2 border-black mx-auto">
-        <div className="p-4">
-          <h3 className="text-lg font-bold">Title</h3>
-          <p className="text-sm">Description</p>
+        <div className="inline-block border border-black p-3">
+            <div className="h-40 w-40 bg-slate-400 mb-4"></div>
+            <div>
+                <h3 className="font-bold text-lg mb-2">{title}</h3>
+                <p className="text-sm">{description}</p>
             </div>
         </div>
     );
