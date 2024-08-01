@@ -8,6 +8,26 @@ const productList = [
       id: 2,
       title: 'Product 2',
       description: 'Description of Product 2'
+    },
+    {
+      id: 3,
+      title: 'Product 2',
+      description: 'Description of Product 2'
+    },
+    {
+      id: 4,
+      title: 'Product 2',
+      description: 'Description of Product 2'
+    },
+    {
+      id: 5,
+      title: 'Product 2',
+      description: 'Description of Product 2'
+    },
+    {
+      id: 6,
+      title: 'Product 2',
+      description: 'Description of Product 2'
     }
   ];
   
