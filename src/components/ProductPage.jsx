@@ -3,9 +3,9 @@ import Product from './Product';
 
 export default function ProductPage({ products, addToCart }) {
   return (
-    <div className='mt-20 flex flex-col items-center justify-center'>
-      <h1>All Products</h1>
-      <div className='grid grid-flow-col auto-cols-max gap-4'>
+    <div className={pageStyle}>
+      <h1 className={pageHeading}>All Products</h1>
+      <div className={productGrid}>
         {products.map((product) => (
           <Product 
             key={product.id} 
@@ -19,3 +19,8 @@ export default function ProductPage({ products, addToCart }) {
     </div>
   );
 }
+const productGrid = 'grid grid-cols-6 gap-4';
+
+const pageStyle = ' w-full mt-32 flex flex-col items-center justify-center gap-10';
+
+const pageHeading = 'text-3xl font-bold';
