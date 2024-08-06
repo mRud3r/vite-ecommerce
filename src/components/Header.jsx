@@ -1,14 +1,21 @@
-export default function Header( {onCartClick} ) {
+export default function Header({ onCartClick }) {
     return (
-        <header className="fixed top-0 w-full flex items-center justify-between p-2 border-b-4 border-black">
-            <h1 className="text-xl font-bold">Logo.</h1>
-            <div id="links" className="flex itmems-center justify-between gap-4">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Features</a>
-                    <a href="">Contact</a>
+        <header className="fixed top-0 w-full bg-white shadow-lg border-b-2 border-gray-200 z-50">
+            <div className="container mx-auto flex items-center justify-between p-4">
+                <h1 className="text-2xl font-bold text-gray-800">Logo</h1>
+                <nav id="links" className="flex items-center gap-8">
+                    <a href="#" className="text-gray-600 hover:text-gray-900 transition duration-300">Home</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-900 transition duration-300">About</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-900 transition duration-300">Features</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-900 transition duration-300">Contact</a>
+                </nav>
+                <button 
+                    onClick={onCartClick} 
+                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+                >
+                    CART
+                </button>
             </div>
-            <button onClick={onCartClick}>CART</button>
         </header>
     );
 }
