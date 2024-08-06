@@ -10,8 +10,6 @@ export default function ProductPage({ products, addToCart }) {
           <Product 
             key={product.id} 
             product={product} 
-            title={product.title} 
-            description={product.description} 
             addToCart={() => addToCart(product)} 
           />
         ))}

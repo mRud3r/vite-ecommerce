@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function Product({ product, title, description, addToCart }) {
+export default function Product({ product, addToCart }) {
   return (
     <div className={cardStyle}>
       <div className="h-40 w-40 bg-slate-400 mb-4 rounded-sm"></div>
       <div>
-        <h3 className={cardTitle}>{title}</h3>
-        <p className={cardDescription}>{description}</p>
+        <h3 className={cardTitle}>{product.title}</h3>
+        <p className={cardDescription}>{product.description}</p>
+        <p>{product.price}</p>
         <button className={addToCartBtn} onClick={addToCart}>Add to Cart</button>
       </div>
     </div>
