@@ -1,7 +1,7 @@
 export default function CartItem({ item, onAdd, onRemove }) {
     return (
         <div className="flex items-center gap-4 p-4 border border-gray-200 rounded shadow-sm bg-white">
-            <div className="w-16 h-16 bg-indigo-400 rounded-md flex-shrink-0"></div>
+            <img src={`/images/${item.image}`} alt={item.alt} className="w-30 h-24"/>
             <div className="flex flex-col flex-grow">
                 <h4 className="text-lg font-semibold text-gray-800">{item.title}</h4>
                 <p className="text-gray-600">Quantity: {item.quantity}</p>

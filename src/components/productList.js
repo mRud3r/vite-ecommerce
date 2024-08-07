@@ -1,45 +1,48 @@
 const productList = [
     {
       id: 1,
-      title: 'T-shirt',
+      title: 'White T-shirt',
       description: 'Description of Product 1',
-      price: 5,
-      category: 'men'
+      price: 19,
+      category: 'men',
+      image: 'whiteshirt.jpg',
+      alt: 'men with white t-shirt on'
     },
     {
       id: 2,
-      title: 'Shoes',
-      description: 'Description of Product 2',
-      price: 10,
-      category: 'women'
+      title: 'Grey T-shirt',
+      description: 'Description of Product 1',
+      price: 12,
+      category: 'women',
+      image: 'womenshirt.jpg',
+      alt: 'women with white t-shirt'
     },
     {
       id: 3,
-      title: 'Jeans',
-      description: 'Description of Product 2',
-      price: 8,
-      category: 'kids'
+      title: 'Sneakers',
+      description: 'Description of Product 1',
+      price: 109,
+      category: 'men',
+      image: 'sneakers.jpg',
+      alt: 'women with white t-shirt'
     },
     {
       id: 4,
-      title: 'Jacket',
-      description: 'Description of Product 2',
-      price: 4,
-      category: 'men'
+      title: 'Glasses',
+      description: 'Description of Product 1',
+      price: 39,
+      category: 'kids',
+      image: 'glasses.jpg',
+      alt: 'women with white t-shirt'
     },
     {
       id: 5,
-      title: 'Sweater',
-      description: 'Description of Product 2',
-      price: 22,
-      category: 'women'
-    },
-    {
-      id: 6,
-      title: 'Socks',
-      description: 'Description of Product 2',
-      price: 12,
-      category: 'kids'
+      title: 'Women Shoes',
+      description: 'Description of Product 1',
+      price: 70,
+      category: 'women',
+      image: 'womenshoes.jpg',
+      alt: 'women with white t-shirt'
     }
   ];
   
