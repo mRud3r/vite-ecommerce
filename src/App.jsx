@@ -5,8 +5,13 @@ import Cart from "./components/Cart";
 import productList from "./components/productList";
 
 function App() {
+  const [currentCategory, setCurrentCategory] = useState(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState({});
+
+  const handleCategoryChange = (category) => {
+    setCurrentCategory(category);
+  }
 
   const addToCart = (product) => {
     setCartItems(prevCartItems => {
@@ -42,8 +47,8 @@ function App() {
 
   return (
     <>
-      <Header onCartClick={handleCartClick} />
-      <ProductPage products={productList} addToCart={addToCart} />
+      <Header onCartClick={handleCartClick} onCategoryClick={handleCategoryChange} />
+      <ProductPage products={productList} addToCart={addToCart} category={currentCategory} />
       <Cart isOpen={isCartOpen} onClose={handleCloseCart} cartItems={cartItems} removeFromCart={removeFromCart} addToCart={addToCart} />
     </>
   );
