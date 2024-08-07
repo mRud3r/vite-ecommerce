@@ -3,6 +3,7 @@ import ProductPage from "./components/ProductPage";
 import Header from "./components/Header";
 import Cart from "./components/Cart";
 import productList from "./components/productList";
+import Footer from "./components/Footer";
 
 function App() {
   const [currentCategory, setCurrentCategory] = useState(null);
@@ -50,6 +51,7 @@ function App() {
       <Header onCartClick={handleCartClick} onCategoryClick={handleCategoryChange} />
       <ProductPage products={productList} addToCart={addToCart} category={currentCategory} />
       <Cart isOpen={isCartOpen} onClose={handleCloseCart} cartItems={cartItems} removeFromCart={removeFromCart} addToCart={addToCart} />
+      <Footer />
     </>
   );
 }
